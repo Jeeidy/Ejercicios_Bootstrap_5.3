@@ -29,7 +29,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Categorías</a>
+                    <a class="nav-link" href="categorias.html">Categorías</a>
                   </li>
 
                   <li class="nav-item dropdown">
@@ -37,8 +37,8 @@
                       Cuenta
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Iniciar Sesión</a></li>
-                      <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar Sesión</a></li>
+                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registrarse</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Ayuda</a></li>
                     </ul>
@@ -58,6 +58,110 @@
           </nav>
 
                     <!-- Content navbar -->
+
+        <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Form -->
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+        </form>
+        <!-- Form -->
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Ingresar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Modal2 -->
+ <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Registrarse</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+         <!-- Form -->
+
+         <form class="row g-3">
+
+          <div class="col-md-6">
+            <label for="inputAddress" class="form-label">Elija su tipo de documento</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Tipo de Documento</option>
+              <option value="1">C.C.</option>
+              <option value="2">T.I.</option>
+              <option value="3">PEP</option>
+            </select>
+          </div>
+         
+            <br>
+            <div class="col-md-6">
+              <label for="inputAddress" class="form-label">Número de Documento</label>
+              <input class="form-control" type="number" placeholder="Número de Documento" aria-label="Número de Documento">
+            </div>
+            <br>
+
+      
+          <div class="col-md-6">
+            <label for="inputAddress" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Nombre">
+          </div>
+          <div class="col-md-6">
+            <label for="inputAddress2" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apellido">
+          </div>
+          <div class="col-12">
+            <label for="inputCity" class="form-label">Celular</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          
+          
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="inputPassword4">
+              <span id="passwordHelpInline" class="form-text">
+                Debe tener al menos 8 caracteres.
+              </span>
+            </div>
+        </form>
+
+          <!-- Form -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Registar</button>
+      </div>
+    </div>
+  </div>
+</div>
                     
 
   <!-- Content carrusel -->
